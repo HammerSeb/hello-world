@@ -1,0 +1,10 @@
+services:
+  hello-world:
+    image: hello-world
+    networks:
+      - npm
+
+networks:
+  npm:
+    external: true
+    name: npm
